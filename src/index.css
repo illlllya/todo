@@ -17,3 +17,11 @@ li:hover {
   cursor: pointer;
   transition: background-color 0.2s ease-out;
 }
+
+textarea {
+  width: 90%;
+}
+
+form {
+  display: flex;
+}
