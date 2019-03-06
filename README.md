@@ -1,6 +1,6 @@
-## Available Scripts
+## Example
 
-Example: https://ilya-todo.herokuapp.com/
+https://ilya-todo.herokuapp.com/
 
 ## Available Scripts
 
