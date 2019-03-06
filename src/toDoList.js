@@ -49,7 +49,7 @@ class toDoList extends Component {
       <div className="toDoListMain">
         <div className="header">
           <form onSubmit={this.addItem}>
-            <textarea
+            <input
               ref={a => (this._inputElement = a)}
               placeholder="enter task"
               autoFocus
