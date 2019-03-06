@@ -9,7 +9,6 @@ button {
 
 li {
   margin-top: 5px;
-  margin-right: 10%;
   display: flex;
 }
 
@@ -19,14 +18,20 @@ li:hover {
   transition: background-color 0.2s ease-out;
 }
 
+li:hover > .logo {
+  color: #2ffd30;
+}
+
 .list-group-item {
   display: flex;
   justify-content: space-between;
 }
 
 input {
-  width: 90%;
+  width: 100%;
+  margin-bottom: 25px;
   height: 40px;
+  padding-left: 17px;
 }
 
 form {
@@ -35,6 +40,7 @@ form {
 
 .logo {
   align-self: center;
+  font-size: 18px;
   padding-left: 10px;
   color: #dedede;
 }

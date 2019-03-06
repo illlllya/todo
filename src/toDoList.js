@@ -54,9 +54,9 @@ class toDoList extends Component {
               placeholder="enter task"
               autoFocus
             />
-            <button className="btn btn-sm btn-primary" type="submit">
+            {/* <button className="btn btn-sm btn-primary" type="submit">
               add
-            </button>
+            </button> */}
           </form>
         </div>
         <ToDoItems entries={this.state.items} delete={this.deleteItem} />
