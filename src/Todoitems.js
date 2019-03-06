@@ -15,7 +15,8 @@ class TodoItems extends Component {
         className="list-group-item"
         key={items.key}
       >
-        {items.text}
+        <div>{items.text}</div>
+        <div class="logo">&#x2713;</div>
       </li>
     );
   }

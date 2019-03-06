@@ -10,12 +10,18 @@ button {
 li {
   margin-top: 5px;
   margin-right: 10%;
+  display: flex;
 }
 
 li:hover {
   background-color: #96dcfe;
   cursor: pointer;
   transition: background-color 0.2s ease-out;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
 }
 
 input {
@@ -25,4 +31,10 @@ input {
 
 form {
   display: flex;
+}
+
+.logo {
+  align-self: center;
+  padding-left: 10px;
+  color: #dedede;
 }
