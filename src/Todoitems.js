@@ -16,7 +16,7 @@ class TodoItems extends Component {
         key={items.key}
       >
         <div>{items.text}</div>
-        <div class="logo">&#x2713;</div>
+        <div className="logo">&#x2713;</div>
       </li>
     );
   }
