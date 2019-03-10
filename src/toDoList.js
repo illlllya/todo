@@ -7,42 +7,24 @@ class toDoList extends Component {
   constructor(props) {
     super(props);
 
-    // how many items in local storage without default methods
-    let itemsInLocalStorage = -6;
-
-    // enumerate over each key in localStorage
-    for (var key in localStorage) {
-      itemsInLocalStorage++;
-    }
-
     this.state = {
       items: []
     };
 
     // if localStorage has non-default content --> create items with key/values from localStorage
-    if (itemsInLocalStorage > 0) {
-      for (var key in localStorage) {
-        //removes default methods in localstorage
-        if (key.length >= 11) {
-          this.state.items.push({
-            text: localStorage.getItem(key),
-            key: key
-          });
-        }
-
-        itemsInLocalStorage++;
+    // removes default methods in localstorage
+    for (var key in localStorage) {
+      if (key.length >= 11) {
+        this.state.items.push({
+          text: localStorage.getItem(key),
+          key: key
+        });
       }
     }
 
     this.addItem = this.addItem.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
   }
-
-  // clearLocalStorage() {
-  //   console.log("Clearing local storage...");
-  //   window.localStorage.clear();
-  //   window.location.reload();
-  // }
 
   addItem(e) {
     if (this._inputElement.value !== "") {
@@ -90,12 +72,6 @@ class toDoList extends Component {
           </form>
         </div>
         <ToDoItems entries={this.state.items} delete={this.deleteItem} />
-        {/* <button
-          className="btn btn-sm btn-primary"
-          onClick={() => this.clearLocalStorage()}
-        >
-          Clear
-        </button> */}
       </div>
     );
   }
