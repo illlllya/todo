@@ -44,3 +44,12 @@ form {
   padding-left: 10px;
   color: #dedede;
 }
+
+@media only screen and (max-width: 600px) {
+  #container {
+    font-size: 25px;
+  }
+  input {
+    height: 60px;
+  }
+}
