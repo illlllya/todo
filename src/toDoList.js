@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import ToDoItems from "./Todoitems";
 
-// todo add localStorage support https://codesandbox.io/s/5z6p3wvq64
-
 class toDoList extends Component {
   constructor(props) {
     super(props);
