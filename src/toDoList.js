@@ -9,7 +9,7 @@ class toDoList extends Component {
       items: []
     };
 
-    // if localStorage has non-default content --> create items with key/values from localStorage. Removes default methods in localstorage
+    // if localStorage has non-default content --> create items with key/values from localStorage. Excludes default methods in localstorage
     for (var key in localStorage) {
       if (key.length >= 11) {
         this.state.items.push({
